@@ -1,6 +1,25 @@
 /* Custom Properties */
 
+:root {
+	--first-color: rgb(218, 165, 32);
+	--first-alpha-color: rgba(218, 165, 32, 0.75);
+	--second-color: rgb(12, 15, 17);
+	--second-alpha-color: rgba(12, 15, 17, 0.75);
+	--third-color: rgb(33, 37, 41);
+	--third-alpha-color: rgba(33, 37, 41, 0.75);
+
+	--link-color: rgb(80, 158, 227);
+	--link-alpha-color: rgba(80, 158, 227, 0.75);
+
+	--bg-color: rgb(245, 245, 245);
+	--bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
 /* Reset Styles*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 
 /*  Bootstrap Styles */
 
