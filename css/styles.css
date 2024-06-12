@@ -27,6 +27,17 @@ body {
 	background-color: var(--second-color) !important;
 }
 
+.dropdown-item {
+	color: var(--first-alpha-color);
+	font-weight: 600;
+	transition: all 0.3s ease-out;
+}
+
+.dropdown-item:hover {
+	color: var(--third-alpha-color);
+	font-weight: 600;
+}
+
 .navbar-brand img {
 	width: auto;
 	height: 6rem;
@@ -43,7 +54,6 @@ body {
 }
 
 .nav-item {
-	padding-left: 0.5rem;
 	transition: all 0.3s ease-out;
 }
 
@@ -52,6 +62,7 @@ body {
 }
 
 .nav-link {
+	margin-left: 0.5rem;
 	color: var(--bg-color);
 	font-size: 1.15rem;
 	font-weight: 600;
