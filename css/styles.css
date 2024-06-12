@@ -23,13 +23,32 @@ body {
 
 /*  Bootstrap Styles */
 
-.navbar-brand img {
-	width: auto;
-	height: 5rem;
+.bg-dark {
+	background-color: var(--second-color) !important;
 }
 
-.bg-dark{
-	background-color: var(--second-color) !important;
+.navbar-brand img {
+	width: auto;
+	height: 6rem;
+}
+
+.nav-item {
+	padding-left: 0.5rem;
+	transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+	background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+	color: var(--bg-color);
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	color: var(--first-color);
 }
 
 /* My Styles */
