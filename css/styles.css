@@ -8,8 +8,8 @@
 	--third-color: rgb(33, 37, 41);
 	--third-alpha-color: rgba(33, 37, 41, 0.75);
 
-	--link-color: rgb(80, 158, 227);
-	--link-alpha-color: rgba(80, 158, 227, 0.75);
+	--link-color: rgb(145, 145, 145);
+	--link-alpha-color: rgba(145, 145, 145, 0.75);
 
 	--bg-color: rgb(245, 245, 245);
 	--bg-alpha-color: rgba(245, 245, 245, 0.75);
@@ -21,10 +21,23 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+a {
+	color: var(--link-color);
+	transition: all 0.3s ease-out;
+}
+
+a:hover {
+	color: var(--first-color);
+}
+
 /*  Bootstrap Styles */
 
 .bg-dark {
 	background-color: var(--second-color) !important;
+}
+
+.copyright{
+	color: var(--link-color);
 }
 
 .dropdown-item {
