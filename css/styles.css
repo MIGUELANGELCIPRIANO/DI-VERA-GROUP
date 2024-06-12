@@ -23,6 +23,15 @@ body {
 
 /*  Bootstrap Styles */
 
+.navbar-brand img {
+	width: auto;
+	height: 5rem;
+}
+
+.bg-dark{
+	background-color: var(--second-color) !important;
+}
+
 /* My Styles */
 
 /* X-Small devices (portrait phones, less than 576px) */
