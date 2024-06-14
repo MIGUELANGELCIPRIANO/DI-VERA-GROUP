@@ -36,7 +36,7 @@ a:hover {
 	background-color: var(--second-color) !important;
 }
 
-.copyright{
+.copyright {
 	color: var(--link-color);
 }
 
@@ -86,6 +86,15 @@ a:hover {
 }
 
 /* My Styles */
+
+.bg-gradient-dark {
+	background-color: rgb(36, 36, 36, 1);
+	background-image: linear-gradient(
+		135deg,
+		rgba(12, 15, 17, 0.92),
+		rgb(36, 36, 36, 1)
+	);
+}
 
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
