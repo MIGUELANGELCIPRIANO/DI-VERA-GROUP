@@ -87,6 +87,10 @@ a:hover {
 
 /* My Styles */
 
+.bg-alpha-color{
+	background-color: var(--second-alpha-color);
+}
+
 .bg-gradient-dark {
 	background-color: rgb(36, 36, 36, 1);
 	background-image: linear-gradient(
