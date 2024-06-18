@@ -96,6 +96,12 @@ a:hover {
 	);
 }
 
+.bg-hero-image {
+	background-image: var(--bg-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .bg-third-color {
 	background-color: var(--third-color);
 }
