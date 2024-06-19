@@ -111,6 +111,14 @@ a:hover {
 	background-color: var(--third-color);
 }
 
+.img-fluid {
+	filter: drop-shadow(1rem 1rem 1rem black);
+}
+
+.text-first-color {
+	color: var(--first-color);
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
