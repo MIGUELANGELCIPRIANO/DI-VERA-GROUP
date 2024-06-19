@@ -87,7 +87,7 @@ a:hover {
 
 /* My Styles */
 
-.bg-alpha-color{
+.bg-alpha-color {
 	background-color: var(--second-alpha-color);
 }
 
@@ -104,6 +104,7 @@ a:hover {
 	background-image: var(--bg-image);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .bg-third-color {
