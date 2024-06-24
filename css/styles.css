@@ -37,6 +37,10 @@ a:hover {
 	background-color: var(--second-color) !important;
 }
 
+.carousel-caption{
+	z-index: 1;
+}
+
 .copyright {
 	color: var(--link-color);
 }
