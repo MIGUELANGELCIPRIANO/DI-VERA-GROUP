@@ -37,7 +37,7 @@ a:hover {
 	background-color: var(--second-color) !important;
 }
 
-.carousel-caption{
+.carousel-caption {
 	z-index: 1;
 }
 
@@ -54,6 +54,24 @@ a:hover {
 .dropdown-item:hover {
 	color: var(--third-color);
 	font-weight: 600;
+}
+
+.form-control {
+	color: var(--bg-color);
+	background-color: var(--third-alpha-color);
+	border: thin solid var(--link-color);
+	transition: all 0.15s ease-in-out;
+}
+
+.form-control:focus {
+	color: var(--bg-color);
+	background-color: var(--third-alpha-color);
+	border: thin solid var(--first-color);
+	box-shadow: none;
+}
+
+.form-control::placeholder {
+	color: var(--link-color);
 }
 
 .navbar-brand img {
