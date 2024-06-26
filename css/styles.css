@@ -3,6 +3,7 @@
 :root {
 	--first-color: rgb(218, 165, 32);
 	--first-alpha-color: rgba(218, 165, 32, 0.75);
+	--first-beta-color: rgba(218, 165, 32, 0.25);
 	--second-color: rgb(12, 15, 17);
 	--second-alpha-color: rgba(12, 15, 17, 0.75);
 	--third-color: rgb(33, 37, 41);
@@ -66,8 +67,8 @@ a:hover {
 .form-control:focus {
 	color: var(--bg-color);
 	background-color: var(--third-alpha-color);
-	border: thin solid var(--first-color);
-	box-shadow: none;
+	border: var(--bs-border-width) solid var(--first-color);
+	box-shadow: 0 0 0 0.25rem var(--first-beta-color);
 }
 
 .form-control::placeholder {
