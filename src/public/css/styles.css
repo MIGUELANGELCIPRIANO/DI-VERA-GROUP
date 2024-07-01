@@ -34,16 +34,8 @@ a:hover {
 
 /*  Bootstrap Styles */
 
-.bg-dark {
-	background-color: var(--second-color) !important;
-}
-
 .carousel-caption {
 	z-index: 1;
-}
-
-.copyright {
-	color: var(--link-color);
 }
 
 .dropdown-item {
@@ -143,11 +135,19 @@ a:hover {
 	background-position: center;
 }
 
+.bg-link-color {
+	color: var(--link-color);
+}
+
+.bg-second-color {
+	background-color: var(--second-color);
+}
+
 .bg-third-color {
 	background-color: var(--third-color);
 }
 
-.img-fluid {
+.drop-shadow {
 	filter: drop-shadow(1rem 1rem 1rem black);
 }
 
