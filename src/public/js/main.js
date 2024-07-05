@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('contactForm')
+	const submitButton = document.getElementById('submitButton')
+	const spinner = document.getElementById('spinner')
 
 	form.addEventListener('submit', function (event) {
 		event.preventDefault()
@@ -15,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			data[key] = value
 		})
 
+		submitButton.style.display = 'none'
+		spinner.style.display = 'inline-block'
+
 		fetch('/send-email', {
 			method: 'POST',
 			headers: {
@@ -27,8 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
 					window.location.href = '/thanks.html'
 				} else {
 					console.error('Error:', response.statusText)
+					submitButton.style.display = 'inline-block'
+					spinner.style.display = 'none'
 				}
 			})
-			.catch((error) => console.error('Error:', error))
+			.catch((error) => {
+				console.error('Error:', error)
+				submitButton.style.display = 'inline-block'
+				spinner.style.display = 'none'
+			})
 	})
 })
