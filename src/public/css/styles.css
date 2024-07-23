@@ -52,7 +52,7 @@ a:hover {
 .form-control {
 	color: var(--bg-color);
 	background-color: var(--third-alpha-color);
-	border: thin solid var(--link-color);
+	border: var(--bs-border-width) solid var(--link-color);
 	transition: all 0.15s ease-in-out;
 }
 
