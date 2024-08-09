@@ -18,18 +18,24 @@
 
 /* Reset Styles*/
 
-body {
-	font-family: 'Montserrat', sans-serif;
-}
-
 a {
 	text-decoration: none;
 	color: var(--link-color);
 	transition: all 0.3s ease-out;
 }
 
+a:focus {
+	color: var(--first-color);
+	outline: none;
+	box-shadow: none;
+}
+
 a:hover {
 	color: var(--first-color);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*  Bootstrap Styles */
@@ -95,6 +101,12 @@ a:hover {
 	color: var(--first-color);
 	font-size: 1.15rem;
 	font-weight: 600;
+}
+
+.nav-link:focus {
+	color: var(--bg-color);
+	outline: none;
+	box-shadow: none;
 }
 
 .nav-link:hover {
