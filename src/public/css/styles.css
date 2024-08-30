@@ -44,14 +44,21 @@ body {
 	z-index: 1;
 }
 
+.dropdown-menu {
+	--bs-dropdown-bg: var(--second-color);
+	--bs-dropdown-border-color: var(--first-alpha-color);
+}
+
 .dropdown-item {
 	color: var(--first-color);
 	font-weight: 600;
 	transition: all 0.3s ease-out;
 }
 
-.dropdown-item:hover {
-	color: var(--third-color);
+.dropdown-item:hover,
+.dropdown-item:focus {
+	color: var(--bg-color);
+	background-color: var(--first-alpha-color);
 	font-weight: 600;
 }
 
@@ -101,6 +108,7 @@ body {
 
 .nav-item:hover {
 	background-color: var(--first-alpha-color);
+	border-radius: var(--bs-border-radius);
 }
 
 .nav-link {
@@ -187,6 +195,10 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.dropdown-item:hover {
+		background-color: transparent;
+	}
+
 	.nav-item:hover {
 		background-color: transparent;
 	}
