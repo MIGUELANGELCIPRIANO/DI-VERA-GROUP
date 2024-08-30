@@ -24,7 +24,7 @@
 		<link rel="icon" href="./img/di-vera-favicon.png" />
 	</head>
 	<body>
-		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-second-color">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-second-color">
 			<div class="container">
 				<a class="navbar-brand" href="index.html"
 					><img src="./img/di-vera-logo.png" alt="di-vera-logo"
@@ -270,6 +270,12 @@
 		></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
+				const navbarHeight = document.querySelector('.navbar').offsetHeight
+				document.body.style.paddingTop = navbarHeight + 'px'
+			})
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
 				const navbarToggler = document.querySelector('.navbar-toggler')
 
 				navbarToggler.addEventListener('click', function () {
@@ -307,6 +313,6 @@
 				})
 			})()
 		</script>
-		<script src="/js/main.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
