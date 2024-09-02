@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 
+	// Navbar Dropdown Menu Behavior
+	const dropdownLinks = document.querySelectorAll(
+		'.navbar-nav .dropdown-menu .dropdown-item'
+	)
+	const offCanvasMenu = document.querySelector('#navbarNavDropdown')
+
+	dropdownLinks.forEach((link) => {
+		link.addEventListener('click', () => {
+			const bootstrapCollapse = new bootstrap.Collapse(offCanvasMenu, {
+				toggle: false,
+			})
+			bootstrapCollapse.hide()
+		})
+	})
+
 	// Form Validation Code
 	;(() => {
 		'use strict'
