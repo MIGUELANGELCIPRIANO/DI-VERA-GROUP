@@ -360,28 +360,6 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const navbarHeight = document.querySelector('.navbar').offsetHeight
-				document.body.style.paddingTop = navbarHeight + 'px'
-			})
-		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const navbarToggler = document.querySelector('.navbar-toggler')
-
-				navbarToggler.addEventListener('click', function () {
-					if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-						navbarToggler.style.boxShadow = 'none'
-					}
-				})
-
-				navbarToggler.addEventListener('focusout', function () {
-					if (navbarToggler.getAttribute('aria-expanded') === 'false') {
-						navbarToggler.style.boxShadow = ''
-					}
-				})
-			})
-		</script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
