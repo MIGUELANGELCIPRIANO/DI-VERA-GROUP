@@ -58,7 +58,7 @@ body {
 .dropdown-item:hover,
 .dropdown-item:focus {
 	color: var(--bg-color);
-	background-color: var(--first-alpha-color);
+	background-color: transparent;
 	font-weight: 600;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .navbar-brand img {
-	width: 5.5rem;
+	width: auto;
 	height: 5rem;
 }
 
@@ -100,15 +100,6 @@ body {
 
 .navbar-dark .navbar-toggler[aria-expanded='true'] {
 	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28218, 165, 32%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.nav-item {
-	transition: all 0.3s ease-out;
-}
-
-.nav-item:hover {
-	background-color: var(--first-alpha-color);
-	border-radius: var(--bs-border-radius);
 }
 
 .nav-link {
@@ -195,13 +186,6 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	.dropdown-item:hover {
-		background-color: transparent;
-	}
-
-	.nav-item:hover {
-		background-color: transparent;
-	}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
