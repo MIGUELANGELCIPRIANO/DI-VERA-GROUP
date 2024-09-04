@@ -26,12 +26,28 @@ document.addEventListener('DOMContentLoaded', function () {
 	const offCanvasMenu = document.querySelector('#navbarNavDropdown')
 
 	dropdownLinks.forEach((link) => {
-		link.addEventListener('click', () => {
+		link.addEventListener('click', (e) => {
+			// Delay the collapse of the dropdown
+			setTimeout(() => {
+				const bootstrapCollapse = new bootstrap.Collapse(offCanvasMenu, {
+					toggle: false,
+				})
+				bootstrapCollapse.hide()
+			}, 300) // Adjust the delay time as needed
+		})
+	})
+
+	// Navbar Off-Canvas Menu Collapse on Outside Click
+	document.addEventListener('click', function (e) {
+		if (
+			!navbarToggler.contains(e.target) &&
+			!offCanvasMenu.contains(e.target)
+		) {
 			const bootstrapCollapse = new bootstrap.Collapse(offCanvasMenu, {
 				toggle: false,
 			})
 			bootstrapCollapse.hide()
-		})
+		}
 	})
 
 	// Form Validation Code
