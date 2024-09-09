@@ -38,6 +38,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+html {
+	scroll-padding-top: 98px;
+}
+
 /*  Bootstrap Styles */
 
 .carousel-caption {
@@ -53,6 +57,12 @@ body {
 	color: var(--first-color);
 	font-weight: 600;
 	transition: all 0.3s ease-out;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: var(--bg-color);
+	background-color: transparent;
 }
 
 .dropdown-item:hover,
