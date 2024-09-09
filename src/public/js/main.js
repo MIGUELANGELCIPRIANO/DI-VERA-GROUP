@@ -50,6 +50,52 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 
+	// Dropdown-items Active on Click
+	const dropdownItems = document.querySelectorAll('.dropdown-item')
+	const sections = document.querySelectorAll('section')
+
+	const clearActiveClasses = () => {
+		dropdownItems.forEach((item) => item.classList.remove('active'))
+		document
+			.querySelector('.nav-link.dropdown-toggle')
+			.classList.remove('active')
+	}
+
+	const setActiveLink = (id) => {
+		clearActiveClasses()
+		const activeItem = document.querySelector(`a[href="services.html#${id}"]`)
+		if (activeItem) {
+			activeItem.classList.add('active')
+			document
+				.querySelector('.nav-link.dropdown-toggle')
+				.classList.add('active')
+		}
+	}
+
+	dropdownItems.forEach((item) => {
+		item.addEventListener('click', function () {
+			const targetId = this.getAttribute('href').split('#')[1]
+			setActiveLink(targetId)
+		})
+	})
+
+	// Dropdown-items Active on Scroll
+	const handleScroll = () => {
+		let currentSection = ''
+		sections.forEach((section) => {
+			const sectionTop = section.offsetTop - 100
+			if (window.scrollY >= sectionTop) {
+				currentSection = section.getAttribute('id')
+			}
+		})
+
+		if (currentSection) {
+			setActiveLink(currentSection)
+		}
+	}
+
+	window.addEventListener('scroll', handleScroll)
+
 	// Form Validation Code
 	;(() => {
 		'use strict'
