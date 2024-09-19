@@ -179,6 +179,16 @@ html {
 	filter: drop-shadow(1rem 1rem 1rem black);
 }
 
+.lang-button {
+	background-color: transparent;
+	border: transparent;
+}
+
+.lang-button .flags-item {
+	width: 2rem;
+	border-radius: 10%;
+}
+
 .text-first-color {
 	color: var(--first-color);
 }
