@@ -43,10 +43,21 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ms-lg-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a
+								class="nav-link"
+								href="index.html"
+								data-section="navbar"
+								data-value="home"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="about.html"
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="about.html"
+								data-section="navbar"
+								data-value="about"
 								>About us</a
 							>
 						</li>
@@ -57,30 +68,68 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
+								data-section="navbar"
+								data-value="services"
 							>
 								Services
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="services.html#projects"
+									<a
+										class="dropdown-item"
+										href="services.html#projects"
+										data-section="navbar"
+										data-value="projects"
 										>Projects</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#services"
+									<a
+										class="dropdown-item"
+										href="services.html#services"
+										data-section="navbar"
+										data-value="services"
 										>Services</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#industries"
+									<a
+										class="dropdown-item"
+										href="services.html#industries"
+										data-section="navbar"
+										data-value="industries"
 										>Industries</a
 									>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact us</a>
+							<a
+								class="nav-link"
+								href="contact.html"
+								data-section="navbar"
+								data-value="contact"
+								>Contact us</a
+							>
 						</li>
+						<div class="languages ms-lg-2 py-2">
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="es"
+									src="./img/mx.svg"
+									alt="mx"
+								/>
+							</button>
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="en"
+									src="./img/us.svg"
+									alt="us"
+								/>
+							</button>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -89,28 +138,32 @@
 			<div class="container text-white">
 				<article class="text-center">
 					<h1 class="text-first-color fw-bold">DI-VERA GROUP</h1>
-					<p class="fs-5">
+					<p class="fs-5" data-section="about" data-value="paragraph1">
 						We are a leading provider, consultant, and auditor of military,
 						naval, and aeronautical services and supplies. With over 20 years of
 						experience in the industry, we are renowned for our commitment to
 						excellence and innovation.
 					</p>
-					<p class="fs-3">
-						<b><i>"Leading excellence in every project."</i></b>
+					<p
+						class="fs-3 fw-bold fst-italic"
+						data-section="about"
+						data-value="quote"
+					>
+						"Leading excellence in every project."
 					</p>
-					<p class="fs-5">
+					<p class="fs-5" data-section="about" data-value="paragraph2">
 						At DI-VERA GROUP, our mission is to deliver comprehensive solutions
 						that meet the highest standards of quality and efficiency.
 					</p>
 					<div class="text-start py-3">
-						<p>
+						<p data-section="about" data-value="paragraph3">
 							Since our foundation, we have collaborated on critical projects in
 							the military, naval, and aeronautical industries, ensuring client
 							satisfaction and success at every stage. Our focus on
 							modernization and security enables us to confidently tackle the
 							most demanding challenges.
 						</p>
-						<p>
+						<p data-section="about" data-value="paragraph4">
 							At DI-VERA GROUP, we are committed to leading the way in
 							innovation and exceptional service, always working with integrity
 							and dedication to exceed our clients' expectations.
@@ -119,9 +172,11 @@
 				</article>
 				<section class="row align-items-lg-center">
 					<article class="col-12 col-lg-6 text-lg-end">
-						<h2>Our Vision</h2>
-						<h3>Leading the Future</h3>
-						<p>
+						<h2 data-section="about" data-value="heading1">Our Vision</h2>
+						<h3 data-section="about" data-value="subheading1">
+							Leading the Future
+						</h3>
+						<p data-section="about" data-value="text1">
 							We focus on integrating the latest technologies and management
 							practices to deliver advanced and sustainable solutions across all
 							our projects. Every day, we strive to build a safer and more
@@ -138,9 +193,11 @@
 				</section>
 				<section class="row align-items-lg-center">
 					<article class="col-12 col-lg-6 order-lg-1">
-						<h2>Our Values</h2>
-						<h3>Integrity and Commitment</h3>
-						<p>
+						<h2 data-section="about" data-value="heading2">Our Values</h2>
+						<h3 data-section="about" data-value="subheading2">
+							Integrity and Commitment
+						</h3>
+						<p data-section="about" data-value="text2">
 							At DI-VERA GROUP, we are guided by principles of integrity and
 							commitment in every aspect of our work. We value transparency,
 							ethics, and accountability in all our operations to build lasting
@@ -164,7 +221,11 @@
 				</div>
 				<hr class="bg-link-color" />
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="contactInfo"
+					>
 						For more information, please contact us at
 						<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 					</small>
@@ -177,12 +238,21 @@
 					></a>
 				</div>
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="copyright"
+					>
 						Copyright &copy; 2024 DI-VERA Group.
 					</small>
 				</div>
 				<div>
-					<small class="bg-link-color">All Rights Reserved.</small>
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="rightsReserved"
+						>All Rights Reserved.</small
+					>
 				</div>
 			</div>
 		</footer>

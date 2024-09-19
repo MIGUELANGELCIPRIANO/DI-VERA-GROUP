@@ -43,10 +43,22 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ms-lg-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a
+								class="nav-link"
+								href="index.html"
+								data-section="navbar"
+								data-value="home"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About us</a>
+							<a
+								class="nav-link"
+								href="about.html"
+								data-section="navbar"
+								data-value="about"
+								>About us</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -55,32 +67,68 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
+								data-section="navbar"
+								data-value="services"
 							>
 								Services
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="services.html#projects"
+									<a
+										class="dropdown-item"
+										href="services.html#projects"
+										data-section="navbar"
+										data-value="projects"
 										>Projects</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#services"
+									<a
+										class="dropdown-item"
+										href="services.html#services"
+										data-section="navbar"
+										data-value="services"
 										>Services</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#industries"
+									<a
+										class="dropdown-item"
+										href="services.html#industries"
+										data-section="navbar"
+										data-value="industries"
 										>Industries</a
 									>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="contact.html"
+							<a
+								class="nav-link"
+								href="contact.html"
+								data-section="navbar"
+								data-value="contact"
 								>Contact us</a
 							>
 						</li>
+						<div class="languages ms-lg-2 py-2">
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="es"
+									src="./img/mx.svg"
+									alt="mx"
+								/>
+							</button>
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="en"
+									src="./img/us.svg"
+									alt="us"
+								/>
+							</button>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -90,19 +138,23 @@
 		>
 			<div class="container text-white">
 				<article class="text-center">
-					<h1 class="display-1 text-first-color fw-bold mb-5">
-						Thanks for Contacting Us.
+					<h1
+						class="display-1 text-first-color fw-bold mb-5"
+						data-section="thanks"
+						data-value="heading"
+					>
+						Thanks for contacting us.
 					</h1>
-					<p class="fs-5">
+					<p class="fs-5" data-section="thanks" data-value="paragraph1">
 						We have received your message and one of our representatives will
-						get back to you as soon as possible. We appreciate your interest and
-						will respond within the next 24-48 hours.
+						contact you as soon as possible. Thank you for your interest and we
+						will get back to you within the next 24-48 hours.
 					</p>
-					<p class="fs-5">
+					<p class="fs-5" data-section="thanks" data-value="paragraph2">
 						In the meantime, if you have any urgent questions, please don't
 						hesitate to call us at +52 1 55 9185 6097.
 					</p>
-					<p class="fs-5">
+					<p class="fs-5" data-section="thanks" data-value="paragraph3">
 						Thank you for your patience and for choosing DI-VERA GROUP.
 					</p>
 				</article>
@@ -115,7 +167,11 @@
 				</div>
 				<hr class="bg-link-color" />
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="contactInfo"
+					>
 						For more information, please contact us at
 						<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 					</small>
@@ -128,12 +184,21 @@
 					></a>
 				</div>
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="copyright"
+					>
 						Copyright &copy; 2024 DI-VERA Group.
 					</small>
 				</div>
 				<div>
-					<small class="bg-link-color">All Rights Reserved.</small>
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="rightsReserved"
+						>All Rights Reserved.</small
+					>
 				</div>
 			</div>
 		</footer>

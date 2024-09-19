@@ -43,12 +43,23 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ms-lg-auto">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html"
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="index.html"
+								data-section="navbar"
+								data-value="home"
 								>Home</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About us</a>
+							<a
+								class="nav-link"
+								href="about.html"
+								data-section="navbar"
+								data-value="about"
+								>About us</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -57,30 +68,68 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
+								data-section="navbar"
+								data-value="services"
 							>
 								Services
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="services.html#projects"
+									<a
+										class="dropdown-item"
+										href="services.html#projects"
+										data-section="navbar"
+										data-value="projects"
 										>Projects</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#services"
+									<a
+										class="dropdown-item"
+										href="services.html#services"
+										data-section="navbar"
+										data-value="services"
 										>Services</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#industries"
+									<a
+										class="dropdown-item"
+										href="services.html#industries"
+										data-section="navbar"
+										data-value="industries"
 										>Industries</a
 									>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact us</a>
+							<a
+								class="nav-link"
+								href="contact.html"
+								data-section="navbar"
+								data-value="contact"
+								>Contact us</a
+							>
 						</li>
+						<div class="languages ms-lg-2 py-2">
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="es"
+									src="./img/mx.svg"
+									alt="mx"
+								/>
+							</button>
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="en"
+									src="./img/us.svg"
+									alt="us"
+								/>
+							</button>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -89,14 +138,22 @@
 			<div class="container">
 				<section class="row text-white align-items-lg-center pb-5">
 					<article class="col-12 col-lg-6">
-						<h2>Military, Naval, and Aeronautical Engineering Solutions</h2>
-						<p class="fs-5">
+						<h2 data-section="home" data-value="heading1">
+							Military, Naval, and Aeronautical Engineering Solutions
+						</h2>
+						<p class="fs-5" data-section="home" data-value="paragraph1">
 							We offer engineering, consulting, and auditing services in the
 							military, naval, and aeronautical sectors, ensuring our clients
 							effective, professional, and satisfactory solutions to their
 							challenges and needs.
 						</p>
-						<a class="btn btn-warning btn-lg fw-bold" href="#details">More</a>
+						<a
+							class="btn btn-warning btn-lg fw-bold"
+							href="#details"
+							data-section="home"
+							data-value="button"
+							>More</a
+						>
 					</article>
 					<article class="col-12 col-lg-6">
 						<img
@@ -106,8 +163,8 @@
 						/>
 					</article>
 					<article class="col-12 col-lg-6 order-lg-1">
-						<h2>Technologies</h2>
-						<p class="fs-5">
+						<h2 data-section="home" data-value="heading2">Technologies</h2>
+						<p class="fs-5" data-section="home" data-value="paragraph1">
 							We incorporate the latest technologies in the industry to provide
 							our clients with innovative and cutting-edge solutions. Our
 							commitment to modernization and efficiency allows us to
@@ -133,13 +190,23 @@
 								alt="..."
 							/>
 							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">About us</h5>
-								<p class="card-text">
+								<h5 class="card-title" data-section="navbar" data-value="about">
+									About us
+								</h5>
+								<p
+									class="card-text"
+									data-section="home"
+									data-value="card-about-text"
+								>
 									We are DI-VERA GROUP, a leading company in industrial
 									engineering services, with years of experience and a
 									commitment to excellence.
 								</p>
-								<a href="./about.html" class="btn btn-warning fw-bold mt-auto"
+								<a
+									href="./about.html"
+									class="btn btn-warning fw-bold mt-auto"
+									data-section="home"
+									data-value="card-button"
 									>More details</a
 								>
 							</div>
@@ -155,14 +222,26 @@
 								alt="..."
 							/>
 							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Services</h5>
-								<p class="card-text">
+								<h5
+									class="card-title"
+									data-section="navbar"
+									data-value="services"
+								>
+									Services
+								</h5>
+								<p
+									class="card-text"
+									data-section="home"
+									data-value="card-services-text"
+								>
 									We offer project and supplier management, and equipment
 									certification, operation, and maintenance.
 								</p>
 								<a
 									href="./services.html"
 									class="btn btn-warning fw-bold mt-auto"
+									data-section="home"
+									data-value="card-button"
 									>More details</a
 								>
 							</div>
@@ -178,12 +257,26 @@
 								alt="..."
 							/>
 							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Contact us</h5>
-								<p class="card-text">
+								<h5
+									class="card-title"
+									data-section="navbar"
+									data-value="contact"
+								>
+									Contact us
+								</h5>
+								<p
+									class="card-text"
+									data-section="home"
+									data-value="card-contact-text"
+								>
 									We are here to help. Contact us for more information about our
 									services and how we can collaborate on your project.
 								</p>
-								<a href="./contact.html" class="btn btn-warning fw-bold mt-auto"
+								<a
+									href="./contact.html"
+									class="btn btn-warning fw-bold mt-auto"
+									data-section="home"
+									data-value="card-button"
 									>More details</a
 								>
 							</div>
@@ -199,7 +292,11 @@
 				</div>
 				<hr class="bg-link-color" />
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="contactInfo"
+					>
 						For more information, please contact us at
 						<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 					</small>
@@ -212,12 +309,21 @@
 					></a>
 				</div>
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="copyright"
+					>
 						Copyright &copy; 2024 DI-VERA Group.
 					</small>
 				</div>
 				<div>
-					<small class="bg-link-color">All Rights Reserved.</small>
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="rightsReserved"
+						>All Rights Reserved.</small
+					>
 				</div>
 			</div>
 		</footer>

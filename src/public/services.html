@@ -43,10 +43,22 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ms-lg-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a
+								class="nav-link"
+								href="index.html"
+								data-section="navbar"
+								data-value="home"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About us</a>
+							<a
+								class="nav-link"
+								href="about.html"
+								data-section="navbar"
+								data-value="about"
+								>About us</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -56,30 +68,68 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
+								data-section="navbar"
+								data-value="services"
 							>
 								Services
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="services.html#projects"
+									<a
+										class="dropdown-item"
+										href="services.html#projects"
+										data-section="navbar"
+										data-value="projects"
 										>Projects</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#services"
+									<a
+										class="dropdown-item"
+										href="services.html#services"
+										data-section="navbar"
+										data-value="services"
 										>Services</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#industries"
+									<a
+										class="dropdown-item"
+										href="services.html#industries"
+										data-section="navbar"
+										data-value="industries"
 										>Industries</a
 									>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact us</a>
+							<a
+								class="nav-link"
+								href="contact.html"
+								data-section="navbar"
+								data-value="contact"
+								>Contact us</a
+							>
 						</li>
+						<div class="languages ms-lg-2 py-2">
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="es"
+									src="./img/mx.svg"
+									alt="mx"
+								/>
+							</button>
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="en"
+									src="./img/us.svg"
+									alt="us"
+								/>
+							</button>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -87,8 +137,8 @@
 		<main class="bg-gradient-dark">
 			<section id="projects" class="text-white py-5">
 				<div class="text-center">
-					<h1>Projects</h1>
-					<p class="fs-5">
+					<h1 data-section="services" data-value="heading1">Projects</h1>
+					<p class="fs-5" data-section="services" data-value="paragraph1">
 						Management and development of national and international projects
 					</p>
 				</div>
@@ -135,8 +185,10 @@
 								alt="work-slide-1"
 							/>
 							<div class="carousel-caption bg-alpha-color d-none d-sm-block">
-								<h5>Logistic Solutions</h5>
-								<p>
+								<h5 data-section="services" data-value="carousel-heading1">
+									Logistic Solutions
+								</h5>
+								<p data-section="services" data-value="carousel-paragraph1">
 									Comprehensive logistics management for efficient and timely
 									delivery.
 								</p>
@@ -149,8 +201,10 @@
 								alt="work-slide-2"
 							/>
 							<div class="carousel-caption bg-alpha-color d-none d-sm-block">
-								<h5>Fleet Management</h5>
-								<p>
+								<h5 data-section="services" data-value="carousel-heading2">
+									Fleet Management
+								</h5>
+								<p data-section="services" data-value="carousel-paragraph2">
 									Advanced fleet management solutions ensuring optimal
 									performance and efficiency.
 								</p>
@@ -163,8 +217,10 @@
 								alt="work-slide-3"
 							/>
 							<div class="carousel-caption bg-alpha-color d-none d-sm-block">
-								<h5>Drone and Anti-Drone Technologies</h5>
-								<p>
+								<h5 data-section="services" data-value="carousel-heading3">
+									Drone and Anti-Drone Technologies
+								</h5>
+								<p data-section="services" data-value="carousel-paragraph3">
 									Cutting-edge drone and anti-drone systems for enhanced defense
 									capabilities.
 								</p>
@@ -177,10 +233,12 @@
 								alt="work-slide-4"
 							/>
 							<div class="carousel-caption bg-alpha-color d-none d-sm-block">
-								<h5>Automotive Engineering and MRO</h5>
-								<p>
-									Innovative solutions in automotive engineering, including
-									maintenance, repair, and overhaul (MRO) services.
+								<h5 data-section="services" data-value="carousel-heading4">
+									Automotive Engineering and MRO
+								</h5>
+								<p data-section="services" data-value="carousel-paragraph4">
+									Automotive engineering solutions, including maintenance,
+									repair, and overhaul (MRO) services.
 								</p>
 							</div>
 						</div>
@@ -191,8 +249,10 @@
 								alt="work-slide-5"
 							/>
 							<div class="carousel-caption bg-alpha-color d-none d-sm-block">
-								<h5>Heavy Machinery Operations</h5>
-								<p>
+								<h5 data-section="services" data-value="carousel-heading5">
+									Heavy Machinery Operations
+								</h5>
+								<p data-section="services" data-value="carousel-paragraph5">
 									Expertise in the operation and maintenance of heavy machinery
 									for various industries.
 								</p>
@@ -229,44 +289,55 @@
 				>
 					<div class="container py-5 px-5">
 						<article class="col-12 col-lg-6 offset-lg-6">
-							<h1>Services</h1>
-							<small
+							<h1 data-section="services" data-value="heading2">Services</h1>
+							<small data-section="services" data-value="subheading1"
 								>We offer a wide range of services tailored to the specific
 								needs of our clients.</small
 							>
-							<p class="my-3">
+							<p class="my-3" data-section="services" data-value="paragraph2">
 								Our services encompass engineering design and certification,
 								production, and various infrastructure projects. We provide
 								consultancy in studies and analysis, organizational management,
 								and product management. Additionally, we conduct thorough audits
-								of management systems, teams, and suppliers
+								of management systems, teams, and suppliers.
 							</p>
-							<a class="btn btn-lg btn-warning mb-5" href="contact.html">
-								<b>Contact us</b>
+							<a
+								class="btn btn-lg btn-warning fw-bold mb-5"
+								href="contact.html"
+								data-section="services"
+								data-value="button"
+							>
+								Contact us
 							</a>
 							<div class="row">
 								<div class="col">
-									<p>
+									<p data-section="services" data-value="service-item1">
 										<i class="bi bi-check-lg"></i> Engineering Design and
 										Certification
 									</p>
-									<p><i class="bi bi-check-lg"></i> Production</p>
-									<p><i class="bi bi-check-lg"></i> Infrastructure Projects</p>
-									<p>
-										<i class="bi bi-check-lg"></i> MRO (Maintenance, Repair, and
-										Overhaul)
+									<p data-section="services" data-value="service-item2">
+										<i class="bi bi-check-lg"></i> Production
+									</p>
+									<p data-section="services" data-value="service-item3">
+										<i class="bi bi-check-lg"></i> Infrastructure Projects
+									</p>
+									<p data-section="services" data-value="service-item4">
+										<i class="bi bi-check-lg"></i>
+										MRO (Maintenance, Repair, and Overhaul)
 									</p>
 								</div>
 								<div class="col">
-									<p>
+									<p data-section="services" data-value="service-item5">
 										<i class="bi bi-check-lg"></i> Consultancy: Studies and
 										Analysis
 									</p>
-									<p>
+									<p data-section="services" data-value="service-item6">
 										<i class="bi bi-check-lg"></i> Organizational Management
 									</p>
-									<p><i class="bi bi-check-lg"></i> Product Management</p>
-									<p>
+									<p data-section="services" data-value="service-item7">
+										<i class="bi bi-check-lg"></i> Product Management
+									</p>
+									<p data-section="services" data-value="service-item8">
 										<i class="bi bi-check-lg"></i> Audits: Management Systems,
 										Teams, and Suppliers
 									</p>
@@ -286,39 +357,68 @@
 				>
 					<div class="container py-5 px-5">
 						<article class="col-12 col-lg-6">
-							<h1>Industries</h1>
-							<small>
+							<h1 data-section="services" data-value="heading3">Industries</h1>
+							<small data-section="services" data-value="subheading2">
 								DI-VERA GROUP serves a wide range of industries, providing
 								tailored solutions to meet the specific needs of each sector.
 							</small>
-							<p class="my-3">
+							<p class="my-3" data-section="services" data-value="paragraph3">
 								Our expertise spans across aviation, naval, automotive, heavy
 								and light machinery, rail transport, industrial coatings, and
 								mining. We also specialize in MRO, military equipment, drones
 								and counter-drone systems, meteorological equipment, and
 								firefighting solutions.
 							</p>
-							<a class="btn btn-lg btn-warning mb-5" href="contact.html">
-								<b>Contact us</b>
+							<a
+								class="btn btn-lg btn-warning fw-bold mb-5"
+								href="contact.html"
+								data-section="services"
+								data-value="button"
+							>
+								Contact us
 							</a>
 							<div class="row">
 								<div class="col">
-									<p><i class="bi bi-check-lg"></i> Aeronautics</p>
-									<p><i class="bi bi-check-lg"></i> Naval</p>
-									<p><i class="bi bi-check-lg"></i> Automotive</p>
-									<p><i class="bi bi-check-lg"></i> Industrial Machinery</p>
+									<p data-section="services" data-value="industry-item1">
+										<i class="bi bi-check-lg"></i> Aeronautics
+									</p>
+									<p data-section="services" data-value="industry-item2">
+										<i class="bi bi-check-lg"></i> Naval
+									</p>
+									<p data-section="services" data-value="industry-item3">
+										<i class="bi bi-check-lg"></i> Automotive
+									</p>
+									<p data-section="services" data-value="industry-item4">
+										<i class="bi bi-check-lg"></i> Industrial Machinery
+									</p>
 								</div>
 								<div class="col">
-									<p><i class="bi bi-check-lg"></i> Rail Transport</p>
-									<p><i class="bi bi-check-lg"></i> Coatings</p>
-									<p><i class="bi bi-check-lg"></i> Mining</p>
-									<p><i class="bi bi-check-lg"></i> Firefighting Solutions</p>
+									<p data-section="services" data-value="industry-item5">
+										<i class="bi bi-check-lg"></i> Rail Transport
+									</p>
+									<p data-section="services" data-value="industry-item6">
+										<i class="bi bi-check-lg"></i> Coatings
+									</p>
+									<p data-section="services" data-value="industry-item7">
+										<i class="bi bi-check-lg"></i> Mining
+									</p>
+									<p data-section="services" data-value="industry-item8">
+										<i class="bi bi-check-lg"></i> Firefighting Solutions
+									</p>
 								</div>
 								<div class="col">
-									<p><i class="bi bi-check-lg"></i> Military</p>
-									<p><i class="bi bi-check-lg"></i> Meteorological</p>
-									<p><i class="bi bi-check-lg"></i> Oil & Gas</p>
-									<p><i class="bi bi-check-lg"></i> Renewable Energy</p>
+									<p data-section="services" data-value="industry-item9">
+										<i class="bi bi-check-lg"></i> Military
+									</p>
+									<p data-section="services" data-value="industry-item10">
+										<i class="bi bi-check-lg"></i> Meteorological
+									</p>
+									<p data-section="services" data-value="industry-item11">
+										<i class="bi bi-check-lg"></i> Oil & Gas
+									</p>
+									<p data-section="services" data-value="industry-item12">
+										<i class="bi bi-check-lg"></i> Renewable Energy
+									</p>
 								</div>
 							</div>
 						</article>
@@ -333,7 +433,11 @@
 				</div>
 				<hr class="bg-link-color" />
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="contactInfo"
+					>
 						For more information, please contact us at
 						<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 					</small>
@@ -346,12 +450,21 @@
 					></a>
 				</div>
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="copyright"
+					>
 						Copyright &copy; 2024 DI-VERA Group.
 					</small>
 				</div>
 				<div>
-					<small class="bg-link-color">All Rights Reserved.</small>
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="rightsReserved"
+						>All Rights Reserved.</small
+					>
 				</div>
 			</div>
 		</footer>

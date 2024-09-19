@@ -43,10 +43,22 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ms-lg-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a
+								class="nav-link"
+								href="index.html"
+								data-section="navbar"
+								data-value="home"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About us</a>
+							<a
+								class="nav-link"
+								href="about.html"
+								data-section="navbar"
+								data-value="about"
+								>About us</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -55,32 +67,69 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
+								data-section="navbar"
+								data-value="services"
 							>
 								Services
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="services.html#projects"
+									<a
+										class="dropdown-item"
+										href="services.html#projects"
+										data-section="navbar"
+										data-value="projects"
 										>Projects</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#services"
+									<a
+										class="dropdown-item"
+										href="services.html#services"
+										data-section="navbar"
+										data-value="services"
 										>Services</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="services.html#industries"
+									<a
+										class="dropdown-item"
+										href="services.html#industries"
+										data-section="navbar"
+										data-value="industries"
 										>Industries</a
 									>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="contact.html"
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="contact.html"
+								data-section="navbar"
+								data-value="contact"
 								>Contact us</a
 							>
 						</li>
+						<div class="languages ms-lg-2 py-2">
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="es"
+									src="./img/mx.svg"
+									alt="mx"
+								/>
+							</button>
+							<button class="lang-button">
+								<img
+									class="flags-item"
+									data-language="en"
+									src="./img/us.svg"
+									alt="us"
+								/>
+							</button>
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -89,9 +138,11 @@
 			<div class="container text-white mb-5">
 				<section class="row">
 					<article class="col-12 text-center px-5">
-						<h1>Contact us</h1>
-						<p class="fs-5">Send your comments</p>
-						<p class="fs-5">
+						<h1 data-section="contact" data-value="heading">Contact us</h1>
+						<p class="fs-5" data-section="contact" data-value="subheading">
+							Send your comments
+						</p>
+						<p class="fs-5" data-section="contact" data-value="paragraph">
 							For more information, please contact us at
 							<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 						</p>
@@ -105,34 +156,71 @@
 							novalidate
 						>
 							<div class="mb-3">
-								<label class="form-label" for="name">Name:</label>
+								<label
+									class="form-label"
+									for="name"
+									data-section="contact"
+									data-value="form-nameLabel"
+									>Name:</label
+								>
 								<input
 									class="form-control"
 									id="name"
 									name="name"
-									placeholder="Enter your name"
 									type="text"
+									placeholder="Enter your name"
 									required
+									data-field="name"
 								/>
-								<div class="invalid-feedback">Please enter a name.</div>
+								<div
+									class="invalid-feedback"
+									data-section="contact"
+									data-value="form-nameError"
+								>
+									Please enter a name.
+								</div>
 							</div>
 							<div class="mb-3">
-								<label class="form-label" for="email">Email:</label>
+								<label
+									class="form-label"
+									for="email"
+									data-section="contact"
+									data-value="form-emailLabel"
+									>Email:</label
+								>
 								<input
 									class="form-control"
 									id="email"
 									name="email"
-									placeholder="Enter your email"
 									type="email"
+									placeholder="Enter your email"
 									required
+									data-field="email"
 								/>
-								<div id="emailHelp" class="form-text bg-link-color">
+								<div
+									id="emailHelp"
+									class="form-text bg-link-color"
+									data-section="contact"
+									data-value="form-emailHelp"
+								>
 									We'll never share your email with anyone else.
 								</div>
-								<div class="invalid-feedback">Please enter a valid email.</div>
+								<div
+									class="invalid-feedback"
+									data-section="contact"
+									data-value="form-emailError"
+								>
+									Please enter a valid email.
+								</div>
 							</div>
 							<div class="mb-3">
-								<label class="form-label" for="message">Message:</label>
+								<label
+									class="form-label"
+									for="message"
+									data-section="contact"
+									data-value="form-messageLabel"
+									>Message:</label
+								>
 								<textarea
 									rows="3"
 									class="form-control"
@@ -140,8 +228,13 @@
 									name="message"
 									placeholder="Enter your message"
 									required
+									data-field="message"
 								></textarea>
-								<div class="invalid-feedback">
+								<div
+									class="invalid-feedback"
+									data-section="contact"
+									data-value="form-messageError"
+								>
 									Please enter a message in the textarea.
 								</div>
 							</div>
@@ -150,6 +243,8 @@
 									type="submit"
 									class="btn btn-lg btn-warning fw-bold"
 									id="submitButton"
+									data-section="contact"
+									data-value="form-submitButton"
 								>
 									Submit
 								</button>
@@ -159,7 +254,12 @@
 									role="status"
 									style="display: none"
 								>
-									<span class="visually-hidden">Loading...</span>
+									<span
+										class="visually-hidden"
+										data-section="contact"
+										data-value="form-loading"
+										>Loading...</span
+									>
 								</div>
 							</div>
 						</form>
@@ -183,7 +283,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-caption bg-alpha-color d-none d-sm-block">
 						<h5>DI-VERA GROUP</h5>
-						<p>
+						<p data-section="contact" data-value="carousel-paragraph">
 							Leading excellence in industrial engineering solutions. <br />
 							Innovating for a secure future. <br />
 							Providing cutting-edge services and solutions for defense and
@@ -241,7 +341,11 @@
 				</div>
 				<hr class="bg-link-color" />
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="contactInfo"
+					>
 						For more information, please contact us at
 						<a href="mailto:info@diveragroup.com">info@diveragroup.com</a>
 					</small>
@@ -254,12 +358,21 @@
 					></a>
 				</div>
 				<div>
-					<small class="bg-link-color">
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="copyright"
+					>
 						Copyright &copy; 2024 DI-VERA Group.
 					</small>
 				</div>
 				<div>
-					<small class="bg-link-color">All Rights Reserved.</small>
+					<small
+						class="bg-link-color"
+						data-section="footer"
+						data-value="rightsReserved"
+						>All Rights Reserved.</small
+					>
 				</div>
 			</div>
 		</footer>
