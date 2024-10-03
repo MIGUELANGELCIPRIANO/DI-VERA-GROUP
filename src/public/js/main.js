@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+	// Hide page content while applying the language
+	document.body.classList.add('hidden')
+
 	// Upper Body Padding Function Navbar Height
 	const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0
 	document.body.style.paddingTop = navbarHeight + 'px'
@@ -95,6 +98,57 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	window.addEventListener('scroll', handleScroll)
+
+	// Language dropdown selection
+	const langSelectors = document.querySelectorAll('.lang-selector')
+
+	langSelectors.forEach((selector) => {
+		selector.addEventListener('click', function (e) {
+			e.preventDefault()
+			const selectedLang = this.getAttribute('data-lang')
+
+			localStorage.setItem('selectedLanguage', selectedLang)
+			applyLanguage(selectedLang)
+		})
+	})
+
+	// Load the saved language on page load
+	window.addEventListener('load', function () {
+		const savedLanguage = localStorage.getItem('selectedLanguage')
+
+		if (savedLanguage) {
+			applyLanguage(savedLanguage).then(() => {
+				document.body.classList.remove('hidden')
+			})
+		} else {
+			applyLanguage('es').then(() => {
+				document.body.classList.remove('hidden')
+			})
+		}
+	})
+
+	// Language function
+	function applyLanguage(lang) {
+		return fetch(`./languages/${lang}.json`)
+			.then((res) => res.json())
+			.then((data) => {
+				const textsToChange = document.querySelectorAll('[data-section]')
+				const fieldsToChange = document.querySelectorAll('[data-field]')
+
+				textsToChange.forEach((element) => {
+					const section = element.dataset.section
+					const value = element.dataset.value
+					element.innerHTML = data[section][value]
+				})
+
+				fieldsToChange.forEach((element) => {
+					const field = element.dataset.field
+					if (data.contact && data.contact[`form-${field}Placeholder`]) {
+						element.placeholder = data.contact[`form-${field}Placeholder`]
+					}
+				})
+			})
+	}
 
 	// Form Validation Code
 	;(() => {
